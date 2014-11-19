@@ -101,10 +101,6 @@
 <source-file src="src/android/LibraryProject/bin/res/crunch/drawable-mdpi/ic_launcher.png" target-dir="bin/res/crunch/drawable-mdpi"/>
 <source-file src="src/android/LibraryProject/bin/res/crunch/drawable-xhdpi/ic_launcher.png" target-dir="bin/res/crunch/drawable-xhdpi"/>
 <source-file src="src/android/LibraryProject/bin/res/crunch/drawable-xxhdpi/ic_launcher.png" target-dir="bin/res/crunch/drawable-xxhdpi"/>
-<source-file src="src/android/LibraryProject/libs/armeabi" target-dir="libs"/>
-<source-file src="src/android/LibraryProject/libs/armeabi-v7a" target-dir="libs"/>
-<source-file src="src/android/LibraryProject/libs/mips" target-dir="libs"/>
-<source-file src="src/android/LibraryProject/libs/x86" target-dir="libs"/>
 <source-file src="src/android/LibraryProject/libs/armeabi/libInkingEngine.so" target-dir="libs/armeabi"/>
 <source-file src="src/android/LibraryProject/libs/armeabi-v7a/libInkingEngine.so" target-dir="libs/armeabi-v7a"/>
 <source-file src="src/android/LibraryProject/libs/mips/libInkingEngine.so" target-dir="libs/mips"/>
