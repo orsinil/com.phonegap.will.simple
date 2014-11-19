@@ -19,23 +19,58 @@
     </js-module>
 
 <platform name="android">
-	<source-file src="src/android/com/phonegap/plugins/will/willPlugin.java" target-dir="src/com/phonegap/plugins/will" />
-	<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/CanvasModel.java" target-dir="src/com/wacom/toolsconfigurator"/>
-<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/Controller.java" target-dir="src/com/wacom/toolsconfigurator"/>
-<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/ExportDialogFragment.java" target-dir="src/com/wacom/toolsconfigurator"/>
-<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/Ink.java" target-dir="src/com/wacom/toolsconfigurator"/>
-<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/DrawWithTouchPart05.java" target-dir="src/com/wacom/toolsconfigurator"/>
-<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/MainActivity.java" target-dir="src/com/wacom/toolsconfigurator"/>
-<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/NavigationFragment.java" target-dir="src/com/wacom/toolsconfigurator"/>
-<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/PressureToolSettings.java" target-dir="src/com/wacom/toolsconfigurator"/>
-<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/TextureToolSettings.java" target-dir="src/com/wacom/toolsconfigurator"/>
-<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/ToolConfigurationFragment.java" target-dir="src/com/wacom/toolsconfigurator"/>
-<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/ToolSettings.java" target-dir="src/com/wacom/toolsconfigurator"/>
-<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/VelocityToolSettings.java" target-dir="src/com/wacom/toolsconfigurator"/>
-<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/ui/RadioButtonWithImage.java" target-dir="src/com/wacom/toolsconfigurator/ui"/>
-<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/ui/SeekBarWithTextField.java" target-dir="src/com/wacom/toolsconfigurator/ui"/>
-<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/ui/TintableImageView.java" target-dir="src/com/wacom/toolsconfigurator/ui"/>
-<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/utils/Utils.java" target-dir="src/com/wacom/toolsconfigurator/utils"/>
+	<source-file src="src/android/com/phonegap/plugins/will/willPlugin.java" target-dir="com/phonegap/plugins/will"/>
+	
+	
+	<source-file src="src/android/LibraryProject/src/com/wacom/ink/geometry/WQuad.java" target-dir="src/com/wacom/ink/geometry"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/geometry/WRect.java" target-dir="src/com/wacom/ink/geometry"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/geometry/WVec2.java" target-dir="src/com/wacom/ink/geometry"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/geometry/WVec3.java" target-dir="src/com/wacom/ink/geometry"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/manipulation/Intersectable.java" target-dir="src/com/wacom/ink/manipulation"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/manipulation/Intersector.java" target-dir="src/com/wacom/ink/manipulation"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/manipulation/package-info.java" target-dir="src/com/wacom/ink/manipulation"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/path/package-info.java" target-dir="src/com/wacom/ink/path"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/path/PathBuilder.java" target-dir="src/com/wacom/ink/path"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/path/PressurePathBuilder.java" target-dir="src/com/wacom/ink/path"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/path/SpeedPathBuilder.java" target-dir="src/com/wacom/ink/path"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/penid/PenRecognizer.java" target-dir="src/com/wacom/ink/penid"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/rasterization/BlendMode.java" target-dir="src/com/wacom/ink/rasterization"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/rasterization/InkCanvas.java" target-dir="src/com/wacom/ink/rasterization"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/rasterization/Layer.java" target-dir="src/com/wacom/ink/rasterization"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/rasterization/package-info.java" target-dir="src/com/wacom/ink/rasterization"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/rasterization/ParticleBrush.java" target-dir="src/com/wacom/ink/rasterization"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/rasterization/SolidColorBrush.java" target-dir="src/com/wacom/ink/rasterization"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/rasterization/StrokeBrush.java" target-dir="src/com/wacom/ink/rasterization"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/rasterization/StrokeJoin.java" target-dir="src/com/wacom/ink/rasterization"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/rasterization/StrokePaint.java" target-dir="src/com/wacom/ink/rasterization"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/rendering/package-info.java" target-dir="src/com/wacom/ink/rendering"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/rendering/RenderingContext.java" target-dir="src/com/wacom/ink/rendering"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/rendering/RenderingSurfaceHandler.java" target-dir="src/com/wacom/ink/rendering"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/samples/drawwithtouch/DrawWithTouchPart01.java" target-dir="src/com/wacom/ink/samples/drawwithtouch"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/samples/drawwithtouch/DrawWithTouchPart02.java" target-dir="src/com/wacom/ink/samples/drawwithtouch"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/samples/drawwithtouch/DrawWithTouchPart03.java" target-dir="src/com/wacom/ink/samples/drawwithtouch"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/samples/drawwithtouch/DrawWithTouchPart04.java" target-dir="src/com/wacom/ink/samples/drawwithtouch"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/samples/drawwithtouch/DrawWithTouchPart05.java" target-dir="src/com/wacom/ink/samples/drawwithtouch"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/serialization/InkDecoder.java" target-dir="src/com/wacom/ink/serialization"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/serialization/InkEncoder.java" target-dir="src/com/wacom/ink/serialization"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/serialization/package-info.java" target-dir="src/com/wacom/ink/serialization"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/smooth/MultiChannelSmoothener.java" target-dir="src/com/wacom/ink/smooth"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/smooth/package-info.java" target-dir="src/com/wacom/ink/smooth"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/trial/Trial.java" target-dir="src/com/wacom/ink/trial"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/utils/BitUtils.java" target-dir="src/com/wacom/ink/utils"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/utils/ByteBufferInputStream.java" target-dir="src/com/wacom/ink/utils"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/utils/ByteBufferOutputStream.java" target-dir="src/com/wacom/ink/utils"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/utils/IntentManager.java" target-dir="src/com/wacom/ink/utils"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/utils/IntentResponseHandler.java" target-dir="src/com/wacom/ink/utils"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/utils/Logger.java" target-dir="src/com/wacom/ink/utils"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/utils/Mx.java" target-dir="src/com/wacom/ink/utils"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/utils/OpenGLUtils.java" target-dir="src/com/wacom/ink/utils"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/utils/ReusablePool.java" target-dir="src/com/wacom/ink/utils"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/utils/SharedResource.java" target-dir="src/com/wacom/ink/utils"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/utils/TouchUtils.java" target-dir="src/com/wacom/ink/utils"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/ink/utils/Utils.java" target-dir="src/com/wacom/ink/utils"/>
+
+
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="willPlugin">
@@ -45,7 +80,7 @@
 	
 	        <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <activity
-            android:name="com.wacom.toolsconfigurator.DrawWithTouchPart05"
+            android:name="com.wacom.ink.samples.drawwithtouch.DrawWithTouchPart05"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -56,22 +91,38 @@
         </config-file>
 		
 		
-<source-file src="src/android/wacommInkLibraryAndroidjar.jar" target-dir="libs"/>
-<source-file src="src/android/LibraryProject/assets/defaulttools.json" target-dir="assets"/>
-<source-file src="src/android/LibraryProject/assets/essential_fill_11.png" target-dir="assets"/>
-<source-file src="src/android/LibraryProject/assets/essential_fill_15.png" target-dir="assets"/>
-<source-file src="src/android/LibraryProject/assets/essential_fill_18.png" target-dir="assets"/>
-<source-file src="src/android/LibraryProject/assets/essential_shape_11.png" target-dir="assets"/>
-<source-file src="src/android/LibraryProject/assets/essential_shape_15.png" target-dir="assets"/>
-<source-file src="src/android/LibraryProject/assets/essential_shape_18.png" target-dir="assets"/>
-<source-file src="src/android/LibraryProject/assets/tool_fill_3.png" target-dir="assets"/>
-<source-file src="src/android/LibraryProject/assets/tool_fill_5.png" target-dir="assets"/>
-<source-file src="src/android/LibraryProject/assets/tool_fill_6.png" target-dir="assets"/>
-<source-file src="src/android/LibraryProject/assets/tool_shape_2.png" target-dir="assets"/>
-<source-file src="src/android/LibraryProject/assets/tool_shape_4.png" target-dir="assets"/>
-<source-file src="src/android/LibraryProject/assets/tool_shape_5.png" target-dir="assets"/>
-<source-file src="src/android/LibraryProject/assets/tool_shape_6.png" target-dir="assets"/>
+
+<source-file src="src/android/LibraryProject/assets/fill.png" target-dir="assets"/>
+<source-file src="src/android/LibraryProject/assets/shape.png" target-dir="assets"/>
 <source-file src="src/android/LibraryProject/bin/AndroidManifest.xml" target-dir="bin"/>
+<source-file src="src/android/LibraryProject/bin/classes.dex" target-dir="bin"/>
+<source-file src="src/android/LibraryProject/bin/DrawingWithTouch.apk" target-dir="bin"/>
+<source-file src="src/android/LibraryProject/bin/res/crunch/drawable-hdpi/ic_launcher.png" target-dir="bin/res/crunch/drawable-hdpi"/>
+<source-file src="src/android/LibraryProject/bin/res/crunch/drawable-mdpi/ic_launcher.png" target-dir="bin/res/crunch/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/bin/res/crunch/drawable-xhdpi/ic_launcher.png" target-dir="bin/res/crunch/drawable-xhdpi"/>
+<source-file src="src/android/LibraryProject/bin/res/crunch/drawable-xxhdpi/ic_launcher.png" target-dir="bin/res/crunch/drawable-xxhdpi"/>
+<source-file src="src/android/LibraryProject/libs/armeabi" target-dir="libs"/>
+<source-file src="src/android/LibraryProject/libs/armeabi-v7a" target-dir="libs"/>
+<source-file src="src/android/LibraryProject/libs/mips" target-dir="libs"/>
+<source-file src="src/android/LibraryProject/libs/x86" target-dir="libs"/>
+<source-file src="src/android/LibraryProject/libs/armeabi/libInkingEngine.so" target-dir="libs/armeabi"/>
+<source-file src="src/android/LibraryProject/libs/armeabi-v7a/libInkingEngine.so" target-dir="libs/armeabi-v7a"/>
+<source-file src="src/android/LibraryProject/libs/mips/libInkingEngine.so" target-dir="libs/mips"/>
+<source-file src="src/android/LibraryProject/libs/x86/libInkingEngine.so" target-dir="libs/x86"/>
+<source-file src="src/android/LibraryProject/res/drawable-hdpi/ic_launcher.png" target-dir="res/drawable-hdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/ic_launcher.png" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-xhdpi/ic_launcher.png" target-dir="res/drawable-xhdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-xxhdpi/ic_launcher.png" target-dir="res/drawable-xxhdpi"/>
+<source-file src="src/android/LibraryProject/res/layout/activity_draw_with_touch.xml" target-dir="res/layout"/>
+<source-file src="src/android/LibraryProject/res/menu/main.xml" target-dir="res/menu"/>
+<source-file src="src/android/LibraryProject/res/values/dimens.xml" target-dir="res/values"/>
+<source-file src="src/android/LibraryProject/res/values/strings.xml" target-dir="res/values"/>
+<source-file src="src/android/LibraryProject/res/values/styles.xml" target-dir="res/values"/>
+<source-file src="src/android/LibraryProject/res/values-sw600dp/dimens.xml" target-dir="res/values-sw600dp"/>
+<source-file src="src/android/LibraryProject/res/values-sw720dp-land/dimens.xml" target-dir="res/values-sw720dp-land"/>
+<source-file src="src/android/LibraryProject/res/values-v11/styles.xml" target-dir="res/values-v11"/>
+<source-file src="src/android/LibraryProject/res/values-v14/styles.xml" target-dir="res/values-v14"/>
+
 
 
 <source-file src="src/android/LibraryProject/res/color/custom_button_text_color.xml" target-dir="res/color"/>
@@ -156,14 +207,15 @@
 <source-file src="src/android/LibraryProject/res/layout-xlarge-land-v19/tool_settings.xml" target-dir="res/layout-xlarge-land-v19"/>
 <source-file src="src/android/LibraryProject/res/menu/main.xml" target-dir="res/menu"/>
 
+<!--
 <source-file src="src/android/LibraryProject/res/values/attrs.xml" target-dir="res/values"/>
-
 <source-file src="src/android/LibraryProject/res/values/inkingengine_configuration.xml" target-dir="res/values"/>
 <source-file src="src/android/LibraryProject/res/values/styles.xml" target-dir="res/values"/>
 <source-file src="src/android/LibraryProject/res/values-sw600dp/dimens.xml" target-dir="res/values-sw600dp"/>
 <source-file src="src/android/LibraryProject/res/values-sw720dp-land/dimens.xml" target-dir="res/values-sw720dp-land"/>
 <source-file src="src/android/LibraryProject/res/values-v11/styles.xml" target-dir="res/values-v11"/>
 <source-file src="src/android/LibraryProject/res/values-v14/styles.xml" target-dir="res/values-v14"/>
+-->
 
 
   <!-- plugman cannot merge - prepare manual merge -->
