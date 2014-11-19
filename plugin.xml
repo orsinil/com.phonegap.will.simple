@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?><plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.phonegap.plugins.willPlugin"
+    version="1.0.0">
+
+    <name>will sdk</name>
+    <description></description>
+    <license></license>
+
+    <repo></repo>
+    <issue></issue> 
+    
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>    
+
+    <js-module src="www/will.js" name="willPlugin">
+        <clobbers target="cordova.plugins.willPlugin" />
+    </js-module>
+
+<platform name="android">
+	<source-file src="src/android/com/phonegap/plugins/will/willPlugin.java" target-dir="src/com/phonegap/plugins/will" />
+	<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/CanvasModel.java" target-dir="src/com/wacom/toolsconfigurator"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/Controller.java" target-dir="src/com/wacom/toolsconfigurator"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/ExportDialogFragment.java" target-dir="src/com/wacom/toolsconfigurator"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/Ink.java" target-dir="src/com/wacom/toolsconfigurator"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/DrawWithTouchPart05.java" target-dir="src/com/wacom/toolsconfigurator"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/MainActivity.java" target-dir="src/com/wacom/toolsconfigurator"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/NavigationFragment.java" target-dir="src/com/wacom/toolsconfigurator"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/PressureToolSettings.java" target-dir="src/com/wacom/toolsconfigurator"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/TextureToolSettings.java" target-dir="src/com/wacom/toolsconfigurator"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/ToolConfigurationFragment.java" target-dir="src/com/wacom/toolsconfigurator"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/ToolSettings.java" target-dir="src/com/wacom/toolsconfigurator"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/VelocityToolSettings.java" target-dir="src/com/wacom/toolsconfigurator"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/ui/RadioButtonWithImage.java" target-dir="src/com/wacom/toolsconfigurator/ui"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/ui/SeekBarWithTextField.java" target-dir="src/com/wacom/toolsconfigurator/ui"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/ui/TintableImageView.java" target-dir="src/com/wacom/toolsconfigurator/ui"/>
+<source-file src="src/android/LibraryProject/src/com/wacom/toolsconfigurator/utils/Utils.java" target-dir="src/com/wacom/toolsconfigurator/utils"/>
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="willPlugin">
+        <param name="android-package" value="com.phonegap.plugins.will.willPlugin" />
+      </feature>
+    </config-file>
+	
+	        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <activity
+            android:name="com.wacom.toolsconfigurator.DrawWithTouchPart05"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.wacom.toolsconfigurator.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        </config-file>
+		
+		
+<source-file src="src/android/wacommInkLibraryAndroidjar.jar" target-dir="libs"/>
+<source-file src="src/android/LibraryProject/assets/defaulttools.json" target-dir="assets"/>
+<source-file src="src/android/LibraryProject/assets/essential_fill_11.png" target-dir="assets"/>
+<source-file src="src/android/LibraryProject/assets/essential_fill_15.png" target-dir="assets"/>
+<source-file src="src/android/LibraryProject/assets/essential_fill_18.png" target-dir="assets"/>
+<source-file src="src/android/LibraryProject/assets/essential_shape_11.png" target-dir="assets"/>
+<source-file src="src/android/LibraryProject/assets/essential_shape_15.png" target-dir="assets"/>
+<source-file src="src/android/LibraryProject/assets/essential_shape_18.png" target-dir="assets"/>
+<source-file src="src/android/LibraryProject/assets/tool_fill_3.png" target-dir="assets"/>
+<source-file src="src/android/LibraryProject/assets/tool_fill_5.png" target-dir="assets"/>
+<source-file src="src/android/LibraryProject/assets/tool_fill_6.png" target-dir="assets"/>
+<source-file src="src/android/LibraryProject/assets/tool_shape_2.png" target-dir="assets"/>
+<source-file src="src/android/LibraryProject/assets/tool_shape_4.png" target-dir="assets"/>
+<source-file src="src/android/LibraryProject/assets/tool_shape_5.png" target-dir="assets"/>
+<source-file src="src/android/LibraryProject/assets/tool_shape_6.png" target-dir="assets"/>
+<source-file src="src/android/LibraryProject/bin/AndroidManifest.xml" target-dir="bin"/>
+
+
+<source-file src="src/android/LibraryProject/res/color/custom_button_text_color.xml" target-dir="res/color"/>
+<source-file src="src/android/LibraryProject/res/color/custom_imageview_color_selector.xml" target-dir="res/color"/>
+<source-file src="src/android/LibraryProject/res/color/custom_imageview_color_selector2.xml" target-dir="res/color"/>
+<source-file src="src/android/LibraryProject/res/drawable/drawable_btn_color.xml" target-dir="res/drawable"/>
+<source-file src="src/android/LibraryProject/res/drawable/drawable_btn_leftarrow.xml" target-dir="res/drawable"/>
+<source-file src="src/android/LibraryProject/res/drawable/drawable_btn_paper1.xml" target-dir="res/drawable"/>
+<source-file src="src/android/LibraryProject/res/drawable/drawable_btn_paper2.xml" target-dir="res/drawable"/>
+<source-file src="src/android/LibraryProject/res/drawable/drawable_btn_paper3.xml" target-dir="res/drawable"/>
+<source-file src="src/android/LibraryProject/res/drawable/drawable_btn_paper4.xml" target-dir="res/drawable"/>
+<source-file src="src/android/LibraryProject/res/drawable/drawable_btn_paper5.xml" target-dir="res/drawable"/>
+<source-file src="src/android/LibraryProject/res/drawable/drawable_btn_rightarrow.xml" target-dir="res/drawable"/>
+<source-file src="src/android/LibraryProject/res/drawable-hdpi/ic_launcher.png" target-dir="res/drawable-hdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/bgn_color.png" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/bgn_color_select.png" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_arrow_left.png" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_arrow_right.png" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_clear.png" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_close.png" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_eraser.png" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_paper1.png" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_paper1_select.png" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_paper2.png" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_paper2_select.png" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_paper3.png" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_paper3_select.png" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_paper4.png" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_paper4_select.png" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_paper5.png" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_paper5_select.png" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_pen1.png" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_settings.png" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/ic_launcher.png" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/img_function_exponential.png" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/img_function_periodic.png" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/img_function_sigmoid.png" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/paper_bg_1.jpg" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/paper_bg_2.jpg" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/paper_bg_3.jpg" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/paper_bg_4.jpg" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-mdpi/paper_bg_5.jpg" target-dir="res/drawable-mdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-nodpi/paper_bg.jpg" target-dir="res/drawable-nodpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-nodpi/paper_bg_1.jpg" target-dir="res/drawable-nodpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-nodpi/paper_bg_2.jpg" target-dir="res/drawable-nodpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-nodpi/paper_bg_3.jpg" target-dir="res/drawable-nodpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-nodpi/paper_bg_4.jpg" target-dir="res/drawable-nodpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-nodpi/paper_bg_5.jpg" target-dir="res/drawable-nodpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-xhdpi/bgn_color.png" target-dir="res/drawable-xhdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-xhdpi/bgn_color_select.png" target-dir="res/drawable-xhdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_arrow_left.png" target-dir="res/drawable-xhdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_arrow_right.png" target-dir="res/drawable-xhdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_clear.png" target-dir="res/drawable-xhdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_close.png" target-dir="res/drawable-xhdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_eraser.png" target-dir="res/drawable-xhdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_paper1.png" target-dir="res/drawable-xhdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_paper1_select.png" target-dir="res/drawable-xhdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_paper2.png" target-dir="res/drawable-xhdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_paper2_select.png" target-dir="res/drawable-xhdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_paper3.png" target-dir="res/drawable-xhdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_paper3_select.png" target-dir="res/drawable-xhdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_paper4.png" target-dir="res/drawable-xhdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_paper4_select.png" target-dir="res/drawable-xhdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_paper5.png" target-dir="res/drawable-xhdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_paper5_select.png" target-dir="res/drawable-xhdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_pen1.png" target-dir="res/drawable-xhdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_settings.png" target-dir="res/drawable-xhdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-xhdpi/ic_launcher.png" target-dir="res/drawable-xhdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-xhdpi/img_function_exponential.png" target-dir="res/drawable-xhdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-xhdpi/img_function_periodic.png" target-dir="res/drawable-xhdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-xhdpi/img_function_sigmoid.png" target-dir="res/drawable-xhdpi"/>
+<source-file src="src/android/LibraryProject/res/drawable-xxhdpi/ic_launcher.png" target-dir="res/drawable-xxhdpi"/>
+<source-file src="src/android/LibraryProject/res/layout/activity_main.xml" target-dir="res/layout"/>
+<source-file src="src/android/LibraryProject/res/layout/exportdialog.xml" target-dir="res/layout"/>
+<source-file src="src/android/LibraryProject/res/layout/navigation.xml" target-dir="res/layout"/>
+<source-file src="src/android/LibraryProject/res/layout/tabhost.xml" target-dir="res/layout"/>
+<source-file src="src/android/LibraryProject/res/layout/test.xml" target-dir="res/layout"/>
+<source-file src="src/android/LibraryProject/res/layout/texture_row.xml" target-dir="res/layout"/>
+<source-file src="src/android/LibraryProject/res/layout/texture_selection.xml" target-dir="res/layout"/>
+<source-file src="src/android/LibraryProject/res/layout/toolconfig.xml" target-dir="res/layout"/>
+<source-file src="src/android/LibraryProject/res/layout/tool_settings.xml" target-dir="res/layout"/>
+<source-file src="src/android/LibraryProject/res/layout-xlarge-land-v19/tool_settings.xml" target-dir="res/layout-xlarge-land-v19"/>
+<source-file src="src/android/LibraryProject/res/menu/main.xml" target-dir="res/menu"/>
+
+<source-file src="src/android/LibraryProject/res/values/attrs.xml" target-dir="res/values"/>
+
+<source-file src="src/android/LibraryProject/res/values/inkingengine_configuration.xml" target-dir="res/values"/>
+<source-file src="src/android/LibraryProject/res/values/styles.xml" target-dir="res/values"/>
+<source-file src="src/android/LibraryProject/res/values-sw600dp/dimens.xml" target-dir="res/values-sw600dp"/>
+<source-file src="src/android/LibraryProject/res/values-sw720dp-land/dimens.xml" target-dir="res/values-sw720dp-land"/>
+<source-file src="src/android/LibraryProject/res/values-v11/styles.xml" target-dir="res/values-v11"/>
+<source-file src="src/android/LibraryProject/res/values-v14/styles.xml" target-dir="res/values-v14"/>
+
+
+  <!-- plugman cannot merge - prepare manual merge -->
+  
+    <config-file target="res/values/dimens.xml" parent="/resources">
+      <string name="app_name">WacomInkingToolsConfiguratorForAndroid</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="velocity_configuration_label">Velocity configuration</string>
+    <string name="pressure_configuration_label">Pressure configuration</string>
+    <string name="velocity_function_label">Velocity function</string>
+    <string name="pressure_function_label">Pressure function</string>
+    <string name="minradius">Min radius</string>
+    <string name="maxradius">Max radius</string>
+    <string name="min_alpha">Min alpha</string>
+    <string name="max_alpha">Max alpha</string>
+    <string name="minvalue">Min</string>
+    <string name="maxvalue">Max</string>
+    <string name="minvelocity">Min velocity</string>
+    <string name="maxvelocity">Max velocity</string>
+    <string name="minpressure">Min pressure</string>
+    <string name="maxpressure">Max pressure</string>
+    <string name="texture_switch">Texture</string>
+    <string name="pressure_switch">Pressure</string>
+    <string name="reverse">Reverse</string>
+    <string name="exponential">Exponential</string>
+    <string name="sigmoid">Sigmoid</string>
+    <string name="periodic">Periodic</string>
+    <string name="startradius">Start radius</string>
+    <string name="endradius">End radius</string>
+    <string name="smoothing_radius">Smoothing R.</string>
+    <string name="start_alpha">Start alpha</string>
+    <string name="end_alpha">End alpha</string>
+    <string name="smoothing_alpha">Smoothing A.</string>
+    
+    <string name="texture_title">Texture configuration</string>
+    <string name="texture_fill">Fill source</string>
+    <string name="texture_shape">Shape source</string>
+    <string name="texture_dimensions">128x128px</string>
+    <string name="texture_spacing">Spacing</string>
+    <string name="texture_scattering">Scattering</string>
+    <string name="texture_max_blend">Max blend</string>
+    <string name="texture_rotation">Rotation</string>
+    <string name="texture_rotation_off">Off</string>
+    <string name="texture_rotation_random">Random</string>
+    <string name="texture_rotation_trajectory">Trajectory</string>
+    
+    <string name="exportinfo">The tool name must contain only alphanumeric characters. The tool identifier must be a positive number.</string>
+    <string name="export_dialog_title">Input your tool metadata!</string>
+    <string name="na"></string>
+    <string name="tool_name_hint">Enter a tool name</string>
+    <string name="tool_identifier_hint">Enter a tool identifier</string>
+    <string name="export_dialog_btn_ok">OK</string>
+    <string name="export_dialog_btn_cancel">Cancel</string>
+    <string name="tabVelocityConfig">Velocity config</string>
+    <string name="tabPressureConfig">Pressure config</string>
+    <string name="btn_reset">Reset</string>
+    <string name="btn_export">Export</string>
+    <string name="export_intent_chooser_title">Select export destination</string>
+	
+		</config-file>
+	
+  <config-file target="res/values/dimens.xml" parent="/resources">
+      <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="label_width">120dp</dimen>
+    <dimen name="row_height">55dp</dimen>
+    <dimen name="infobox_padding_left">20dp</dimen>
+    <dimen name="infobox_padding_right">20dp</dimen>
+    <item name="navbar_space" format="dimension" type="dimen">10dp</item>
+    <item name="spacing" format="dimension" type="dimen">10dp</item>
+    <item name="vspacing" format="dimension" type="dimen">10dp</item>
+    <item name="arrow_btn_width" format="dimension" type="dimen">30dp</item>
+    <item name="btn_group_space" format="dimension" type="dimen">25dp</item>
+    <item name="navbar_right_space" format="dimension" type="dimen">20dp</item>
+    <item name="navbar_top_padding" format="dimension" type="dimen">15dp</item>
+    <item name="navbar_bottom_padding" format="dimension" type="dimen">15dp</item>
+    <item name="btn_width" format="dimension" type="dimen">44dp</item>
+    <item name="btn_height" format="dimension" type="dimen">44dp</item>
+    <item name="navbar_container_width" format="dimension" type="dimen">730dp</item>
+    <item name="navbar_container_height" format="dimension" type="dimen">74dp</item>
+    <item name="toolConfigViewWidth" format="dimension" type="dimen">600dp</item>
+    <item name="navbar_width" format="dimension" type="dimen">76dp</item>
+    <dimen name="export_dialog_export_info_padding">20dp</dimen>
+    <dimen name="export_dialog_width">200dp</dimen>
+	</config-file>
+	
+<config-file target="res/values/arrays.xml" parent="/resources">
+    <color name="color1">#8bad21</color>
+    <color name="color2">#FFC42169</color>
+    <color name="color3">#1e77b9</color>
+    <color name="color4">#E4AB13</color>
+    <color name="color5">#000000</color>
+    <color name="color6">#f99c3d</color>
+    <color name="tab_bg_color">#EBEBEB</color>
+    <color name="no_undoredo_steps_color">#424242</color>
+    <color name="bright_pink">#FF007F</color>
+    <string name="colorname_bright_pink">bright_pink</string>
+    <color name="red">#FF0000</color>
+    <string name="colorname_red">red</string>
+    <color name="orange">#FF7F00</color>
+    <string name="colorname_orange">orange</string>
+    <color name="yellow">#FFFF00</color>
+    <string name="colorname_yellow">yellow</string>
+    <color name="chartreuse">#7FFF00</color>
+
+    <string name="colorname_chartreuse">chartreuse</string>
+
+    <color name="green">#00FF00</color>
+
+    <string name="colorname_green">green</string>
+
+    <color name="spring_green">#00FF7F</color>
+
+    <string name="colorname_spring_green">spring_green</string>
+
+    <color name="cyan">#00FFFF</color>
+    <color name="background_color">#FFFFFF</color>
+    <color name="custom_button_pressed">#0000FF</color>
+    <color name="custom_button">#00FF00</color>
+
+    <string name="colorname_cyan">cyan</string>
+
+    <array name="democolors">
+        <item>@color/color1</item>
+        <item>@color/color2</item>
+        <item>@color/color3</item>
+        <item>@color/color4</item>
+        <item>@color/color5</item>
+        <item>@color/color6</item>
+    </array>
+    <array name="colors">
+        <item>@color/bright_pink</item>
+        <item>@color/red</item>
+        <item>@color/orange</item>
+        <item>@color/yellow</item>
+        <item>@color/chartreuse</item>
+        <item>@color/green</item>
+        <item>@color/spring_green</item>
+        <item>@color/cyan</item>
+    </array>
+    <array name="colors_names">
+        <item>@string/colorname_bright_pink</item>
+        <item>@string/colorname_red</item>
+        <item>@string/colorname_orange</item>
+        <item>@string/colorname_yellow</item>
+        <item>@string/colorname_chartreuse</item>
+        <item>@string/colorname_green</item>
+        <item>@string/colorname_spring_green</item>
+        <item>@string/colorname_cyan</item>
+    </array>
+
+    <color name="navbar_bg_color">#FFFFFFFF</color>
+    <color name="leftside_navbar_bg_color">#4a4a4a</color>
+    <color name="selected_btn_color">@android:color/white</color>
+    <color name="unselected_btn_color">#767676</color>
+    
+    <color name="btn_pressed_color">#000000</color>
+    <color name="btn_selected_color">#000000</color>
+	<color name="btn_unselected_color">#808080</color>
+
+	<color name="btn_pressed_color2">#7700ffff</color>
+	<color name="btn_unpressed_color2">#ff00ffff</color>
+    <color name="btn_selected_color2">#7700ffff</color>
+	<color name="btn_unselected_color2">#ff0000ff</color>
+	
+    <item name="btn_tag_color" type="string">color</item>
+    <item name="btn_tag_pen" type="string">pen</item>
+        </config-file>
+  </platform>
+
+
+
+
+</plugin>
