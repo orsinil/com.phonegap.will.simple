@@ -92,6 +92,9 @@
 		
 		
 
+
+
+
 <source-file src="src/android/LibraryProject/assets/fill.png" target-dir="assets"/>
 <source-file src="src/android/LibraryProject/assets/shape.png" target-dir="assets"/>
 <source-file src="src/android/LibraryProject/bin/AndroidManifest.xml" target-dir="bin"/>
@@ -118,88 +121,6 @@
 <source-file src="src/android/LibraryProject/res/values-v14/styles.xml" target-dir="res/values-v14"/>
 
 
-
-<source-file src="src/android/LibraryProject/res/color/custom_button_text_color.xml" target-dir="res/color"/>
-<source-file src="src/android/LibraryProject/res/color/custom_imageview_color_selector.xml" target-dir="res/color"/>
-<source-file src="src/android/LibraryProject/res/color/custom_imageview_color_selector2.xml" target-dir="res/color"/>
-<source-file src="src/android/LibraryProject/res/drawable/drawable_btn_color.xml" target-dir="res/drawable"/>
-<source-file src="src/android/LibraryProject/res/drawable/drawable_btn_leftarrow.xml" target-dir="res/drawable"/>
-<source-file src="src/android/LibraryProject/res/drawable/drawable_btn_paper1.xml" target-dir="res/drawable"/>
-<source-file src="src/android/LibraryProject/res/drawable/drawable_btn_paper2.xml" target-dir="res/drawable"/>
-<source-file src="src/android/LibraryProject/res/drawable/drawable_btn_paper3.xml" target-dir="res/drawable"/>
-<source-file src="src/android/LibraryProject/res/drawable/drawable_btn_paper4.xml" target-dir="res/drawable"/>
-<source-file src="src/android/LibraryProject/res/drawable/drawable_btn_paper5.xml" target-dir="res/drawable"/>
-<source-file src="src/android/LibraryProject/res/drawable/drawable_btn_rightarrow.xml" target-dir="res/drawable"/>
-<source-file src="src/android/LibraryProject/res/drawable-hdpi/ic_launcher.png" target-dir="res/drawable-hdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/bgn_color.png" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/bgn_color_select.png" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_arrow_left.png" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_arrow_right.png" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_clear.png" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_close.png" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_eraser.png" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_paper1.png" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_paper1_select.png" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_paper2.png" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_paper2_select.png" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_paper3.png" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_paper3_select.png" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_paper4.png" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_paper4_select.png" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_paper5.png" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_paper5_select.png" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_pen1.png" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/btn_settings.png" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/ic_launcher.png" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/img_function_exponential.png" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/img_function_periodic.png" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/img_function_sigmoid.png" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/paper_bg_1.jpg" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/paper_bg_2.jpg" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/paper_bg_3.jpg" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/paper_bg_4.jpg" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-mdpi/paper_bg_5.jpg" target-dir="res/drawable-mdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-nodpi/paper_bg.jpg" target-dir="res/drawable-nodpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-nodpi/paper_bg_1.jpg" target-dir="res/drawable-nodpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-nodpi/paper_bg_2.jpg" target-dir="res/drawable-nodpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-nodpi/paper_bg_3.jpg" target-dir="res/drawable-nodpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-nodpi/paper_bg_4.jpg" target-dir="res/drawable-nodpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-nodpi/paper_bg_5.jpg" target-dir="res/drawable-nodpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-xhdpi/bgn_color.png" target-dir="res/drawable-xhdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-xhdpi/bgn_color_select.png" target-dir="res/drawable-xhdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_arrow_left.png" target-dir="res/drawable-xhdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_arrow_right.png" target-dir="res/drawable-xhdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_clear.png" target-dir="res/drawable-xhdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_close.png" target-dir="res/drawable-xhdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_eraser.png" target-dir="res/drawable-xhdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_paper1.png" target-dir="res/drawable-xhdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_paper1_select.png" target-dir="res/drawable-xhdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_paper2.png" target-dir="res/drawable-xhdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_paper2_select.png" target-dir="res/drawable-xhdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_paper3.png" target-dir="res/drawable-xhdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_paper3_select.png" target-dir="res/drawable-xhdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_paper4.png" target-dir="res/drawable-xhdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_paper4_select.png" target-dir="res/drawable-xhdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_paper5.png" target-dir="res/drawable-xhdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_paper5_select.png" target-dir="res/drawable-xhdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_pen1.png" target-dir="res/drawable-xhdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-xhdpi/btn_settings.png" target-dir="res/drawable-xhdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-xhdpi/ic_launcher.png" target-dir="res/drawable-xhdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-xhdpi/img_function_exponential.png" target-dir="res/drawable-xhdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-xhdpi/img_function_periodic.png" target-dir="res/drawable-xhdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-xhdpi/img_function_sigmoid.png" target-dir="res/drawable-xhdpi"/>
-<source-file src="src/android/LibraryProject/res/drawable-xxhdpi/ic_launcher.png" target-dir="res/drawable-xxhdpi"/>
-<source-file src="src/android/LibraryProject/res/layout/activity_main.xml" target-dir="res/layout"/>
-<source-file src="src/android/LibraryProject/res/layout/exportdialog.xml" target-dir="res/layout"/>
-<source-file src="src/android/LibraryProject/res/layout/navigation.xml" target-dir="res/layout"/>
-<source-file src="src/android/LibraryProject/res/layout/tabhost.xml" target-dir="res/layout"/>
-<source-file src="src/android/LibraryProject/res/layout/test.xml" target-dir="res/layout"/>
-<source-file src="src/android/LibraryProject/res/layout/texture_row.xml" target-dir="res/layout"/>
-<source-file src="src/android/LibraryProject/res/layout/texture_selection.xml" target-dir="res/layout"/>
-<source-file src="src/android/LibraryProject/res/layout/toolconfig.xml" target-dir="res/layout"/>
-<source-file src="src/android/LibraryProject/res/layout/tool_settings.xml" target-dir="res/layout"/>
-<source-file src="src/android/LibraryProject/res/layout-xlarge-land-v19/tool_settings.xml" target-dir="res/layout-xlarge-land-v19"/>
-<source-file src="src/android/LibraryProject/res/menu/main.xml" target-dir="res/menu"/>
 
 <!--
 <source-file src="src/android/LibraryProject/res/values/attrs.xml" target-dir="res/values"/>
