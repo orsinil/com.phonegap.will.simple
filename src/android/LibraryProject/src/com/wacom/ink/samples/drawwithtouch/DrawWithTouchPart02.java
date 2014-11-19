@@ -1,7 +1,7 @@
 package com.wacom.ink.samples.drawwithtouch;
 
 import java.nio.FloatBuffer;
-
+import com.pinaround.R;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;

@@ -5,7 +5,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
-
+import com.pinaround.R;
 import com.wacom.ink.rasterization.InkCanvas;
 import com.wacom.ink.rasterization.Layer;
 import com.wacom.ink.rendering.RenderingContext;
