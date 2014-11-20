@@ -19,7 +19,7 @@
     </js-module>
 
 <platform name="android">
-	<source-file src="src/android/com/phonegap/plugins/will/willPlugin.java" target-dir="com/phonegap/plugins/will"/>
+	<source-file src="src/android/com/phonegap/will/simple/willPlugin.java" target-dir="com/phonegap/will/simple"/>
 	
 	
 	<source-file src="src/android/LibraryProject/src/com/wacom/ink/geometry/WQuad.java" target-dir="src/com/wacom/ink/geometry"/>
