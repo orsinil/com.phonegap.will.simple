@@ -74,7 +74,7 @@
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="willPlugin">
-        <param name="android-package" value="com.phonegap.plugins.will.willPlugin" />
+        <param name="android-package" value="com.phonegap.will.simple.willPlugin" />
       </feature>
     </config-file>
 	
