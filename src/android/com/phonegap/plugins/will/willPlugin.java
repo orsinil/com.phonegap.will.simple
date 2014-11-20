@@ -7,7 +7,8 @@ import org.json.JSONException;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.Context;
-import com.wacom.toolsconfigurator.MainActivity;
+/*import com.wacom.toolsconfigurator.MainActivity;*/
+import com.wacom.ink.samples.drawwithtouch.DrawWithTouchPart05
 
 public class willPlugin  extends CordovaPlugin 	{
 public static final int REQUEST_CODE = 0x0ba7c0df;
